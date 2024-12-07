@@ -1,0 +1,1 @@
+# Dependabot Changelog Action Demo
