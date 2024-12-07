@@ -16,6 +16,7 @@ jobs:
         with:
           version: ${{ needs.setup.outputs.version }}
           changelogPath: './CHANGELOG.md'
+          activationLabels: 'dependencies'
 
       # This step is required for committing the changes to your branch. 
       # See https://github.com/stefanzweifel/git-auto-commit-action#commits-of-this-action-do-not-trigger-new-workflow-runs 
