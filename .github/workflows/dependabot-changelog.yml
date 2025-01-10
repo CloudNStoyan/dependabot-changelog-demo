@@ -16,11 +16,12 @@ jobs:
           # See https://github.com/stefanzweifel/git-auto-commit-action#commits-of-this-action-do-not-trigger-new-workflow-runs
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: dangoslen/dependabot-changelog-helper@v3
+      - uses: CloudNStoyan/dependabot-changelog-helper
         with:
           version: ${{ needs.setup.outputs.version }}
           changelogPath: './CHANGELOG.md'
           activationLabels: 'dependencies'
+          includePrLink: 'false'
 
       # This step is required for committing the changes to your branch. 
       # See https://github.com/stefanzweifel/git-auto-commit-action#commits-of-this-action-do-not-trigger-new-workflow-runs 
