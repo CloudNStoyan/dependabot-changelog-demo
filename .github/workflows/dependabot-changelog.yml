@@ -19,7 +19,6 @@ jobs:
       # - uses: dangoslen/dependabot-changelog-helper@v3
       - uses: CloudNStoyan/dependabot-changelog-helper@v3-prefork
         with:
-          version: ${{ needs.setup.outputs.version }}
           changelogPath: './CHANGELOG.md'
           activationLabels: 'dependencies'
 
